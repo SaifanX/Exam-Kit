@@ -1,5 +1,7 @@
 {
   "name": "Warlord Grade 8 Exam Survival Kit",
   "description": "A high-agency, tactical dashboard for Grade 8 students to dominate their final exams with AI-powered study cards and a disciplined Ramadan schedule.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "geolocation"
+  ]
 }

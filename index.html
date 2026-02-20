@@ -7,6 +7,10 @@
     <title>Warlord Edition: Grade 8 Final Exam</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Google API Client Library -->
+    <script src="https://apis.google.com/js/api.js" async defer></script>
     <style>
       body {
         font-family: 'Space Grotesk', sans-serif;
@@ -45,6 +49,15 @@
       @keyframes scanline {
         0% { bottom: 100%; }
         100% { bottom: -100px; }
+      }
+      @keyframes progress-ring {
+        from { stroke-dashoffset: 283; }
+        to { stroke-dashoffset: 0; }
+      }
+      .progress-ring-circle {
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
       }
     </style>
 <script type="importmap">

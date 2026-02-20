@@ -17,6 +17,7 @@ export const RAMADAN_SCHEDULE: ScheduleItem[] = [
 
 export interface ExtendedSubjectIntel extends SubjectIntel {
   examDate: Date;
+  portions: string[];
   masterNotes: {
     title: string;
     summary: string[];
@@ -32,6 +33,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 80,
     strategy: 'The Boss Fight',
     examDate: new Date('2026-03-07T09:00:00'),
+    portions: ["Unseen Passage (Apahita Gadyabhaga)", "Poetry (Vachanaamruta)", "Prose Chapters", "Grammar (Vyakarna)", "Letter Writing (Patra Lekhana)"],
     topics: [
       { topic: 'Prose/Poetry', marks: 40 },
       { topic: 'Grammar', marks: 20 },
@@ -50,6 +52,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 80,
     strategy: 'Architecture',
     examDate: new Date('2026-03-10T09:00:00'),
+    portions: ["Literature: Noor Inayat Khan", "Poem: All The World's a Stage", "Supplementary: King Solomon's Mines", "Notice Writing", "Formal Letter Writing", "Grammar: Tenses & Voice"],
     topics: [
       { topic: 'Literature', marks: 40 },
       { topic: 'Writing', marks: 10 },
@@ -72,6 +75,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 80,
     strategy: 'Visual Warfare',
     examDate: new Date('2026-03-12T09:00:00'),
+    portions: ["Physics: Human Eye & Light", "Physics: Sound", "Chemistry: Combustion & Flame", "Chemistry: Chemical Effects of Electric Current", "Biology: Reaching Age of Adolescence", "Biology: Microorganisms"],
     topics: [
       { topic: 'Physics', marks: 33 },
       { topic: 'Chemistry', marks: 27 },
@@ -94,6 +98,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 80,
     strategy: 'Memory Dump',
     examDate: new Date('2026-03-14T09:00:00'),
+    portions: ["History: The Revolt of 1857", "History: Indian National Movement (1905-1947)", "Geography: Agriculture & Crops", "Geography: Industries & Resources", "Civics: The Judiciary", "Civics: Public Facilities"],
     topics: [
       { topic: 'History', marks: 33 },
       { topic: 'Geography', marks: 20 },
@@ -112,6 +117,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 40,
     strategy: 'Speed Run',
     examDate: new Date('2026-03-16T09:00:00'),
+    portions: ["Grammar: Kaal (Tenses)", "Letter Writing (Patra)", "Unseen Passage", "Textbook Prose/Poetry Summaries"],
     topics: [
       { topic: 'Grammar', marks: 15 },
       { topic: 'Literature', marks: 20 },
@@ -130,6 +136,7 @@ export const SUBJECT_INTEL: ExtendedSubjectIntel[] = [
     totalMarks: 80,
     strategy: 'LETHAL',
     examDate: new Date('2026-03-18T09:00:00'),
+    portions: ["Mensuration (Area & Volume)", "Factorisation", "Introduction to Graphs", "Data Handling", "Exponents & Powers", "Direct & Inverse Proportions"],
     topics: [
       { topic: 'Mensuration 3D', marks: 14 },
       { topic: 'Factorisation', marks: 13 },

@@ -20,7 +20,7 @@ export interface SubjectIntel {
 }
 
 export interface CombatCard {
-  id?: string;
+  id: string;
   subjectId: string;
   title: string;
   summary: string[];
@@ -29,4 +29,14 @@ export interface CombatCard {
   createdAt: number;
 }
 
-export type TabType = 'DASHBOARD' | 'SCHEDULE' | 'DECKS' | 'INTEL';
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+}
+
+export interface UserProfile {
+  username: string;
+  lastSync?: number;
+}
+
+export type TabType = 'DASHBOARD' | 'SCHEDULE' | 'DECKS' | 'INTEL' | 'FOCUS' | 'CHAT' | 'SEARCH';
